@@ -20,10 +20,7 @@
   },
   "homepage": "https://github.com/mthpvg/parcel-react#readme",
   "devDependencies": {
-    "@babel/core": "^7.1.0",
-    "@babel/preset-env": "^7.1.0",
-    "@babel/preset-react": "^7.0.0",
-    "parcel-bundler": "^1.9.7",
+    "parcel-bundler": "^1.10.0-beta.1",
     "serve": "^10.0.1"
   },
   "dependencies": {
