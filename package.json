@@ -4,10 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parcel index.html",
-    "build": "parcel build index.html",
-    "serve": "parcel build index.html && serve dist",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel src/index.html",
+    "clean": "rm -rf dist",
+    "prebuild": "npm run clean",
+    "build": "parcel build src/index.html",
+    "workbox": "workbox generateSW workbox-config.js",
+    "postbuild": "npm run workbox",
+    "serve-build": "npm run build && serve dist"
   },
   "repository": {
     "type": "git",
@@ -22,7 +25,8 @@
   "devDependencies": {
     "parcel-bundler": "^1.10.0-beta.1",
     "sass": "^1.14.0",
-    "serve": "^10.0.1"
+    "serve": "^10.0.1",
+    "workbox-cli": "^3.6.1"
   },
   "dependencies": {
     "react": "^16.4.2",
