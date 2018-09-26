@@ -1,20 +1,9 @@
-import './index.scss'
-
 import React from 'react'
 import ReactDOM from 'react-dom'
 
+import Shell from './shell/Shell'
+
 
 export function bootstrap() {
-
-  class HelloMessage extends React.Component {
-    render() {
-      return <div>Hello {this.props.name}</div>
-    }
-  }
-
-  ReactDOM.render(
-    <HelloMessage name='mthpvg' />,
-    document.getElementById('root')
-  )
-
+  ReactDOM.render(<Shell />, document.getElementById('root'))
 }

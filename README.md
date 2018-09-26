@@ -45,3 +45,12 @@ We have a chicken and egg problem because parcel picks up the service worker fil
 https://github.com/parcel-bundler/parcel/pull/398
 
 To solve this problem we give parcel an empty service worker file: `src/service-worker.js`. When running `npm run build`, parcel copies that file to the `dist` directory then the post hook `postbuild` is triggered and workbox replaces the empty service worker with the real one.
+
+### SPA routing and caching
+When refreshing a page like `/users`, as opposed to the root `/`, while offline, the service worker bails out. Which is logic since it only knows what was produced in the `dist` directory.
+
+To circumvent that problem, workbox as our back, just set:
+```
+"navigateFallback": "/index.html"
+```
+in the workbox config file.

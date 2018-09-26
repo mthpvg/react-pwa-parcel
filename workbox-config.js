@@ -3,5 +3,6 @@ module.exports = {
   "globPatterns": [
     "**/*.{html,css,js,webmanifest}"
   ],
-  "swDest": "dist/service-worker.js"
+  "swDest": "dist/service-worker.js",
+  "navigateFallback": "/index.html"
 }
