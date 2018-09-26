@@ -1,7 +1,23 @@
-$font-stack: Helvetica, sans-serif;
-$primary-color: rgba(29, 29, 29, 0.9);
-
 body {
-  font: 100% $font-stack;
-  color: $primary-color;
+  background: rgb(239, 239, 239);
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0px;
+}
+
+nav {
+  padding: 16px;
+  box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+}
+
+nav a {
+  margin-left: 16px;
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  height: 100%;
+  margin-top: 32px;
+  margin-left: 32px;
+  margin-right: 32px;
 }
