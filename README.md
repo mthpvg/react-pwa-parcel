@@ -1,7 +1,14 @@
-# parcel-react
+# React Progressive Web Application with Parcel
 
-## Warning
-We are currently using `parcel-bundler@1.10.0-beta.1` to be able to benefit from `babel` 7 new release.
+
+## Includes
+- React (User Interface Library)
+- React Router (Routing duh...)
+- Babel (transpile JSX from React)
+- Webmanifest (Add to home screen feature in mobile devices)
+- Service Worker with Workbox (offline support, caching assets)
+- Sass (Not used but why not)
+
 
 ## Install
 ```bash

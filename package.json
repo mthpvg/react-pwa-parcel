@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/mthpvg/parcel-react#readme",
   "devDependencies": {
-    "parcel-bundler": "^1.10.0-beta.1",
+    "parcel-bundler": "^1.10.1",
     "sass": "^1.14.0",
     "serve": "^10.0.1",
     "workbox-cli": "^3.6.1"
