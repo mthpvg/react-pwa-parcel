@@ -10,7 +10,7 @@
     "build": "parcel build src/index.html",
     "workbox": "workbox generateSW workbox-config.js",
     "postbuild": "npm run workbox",
-    "serve-build": "npm run build && serve dist"
+    "serve-build": "npm run build && serve -s dist"
   },
   "repository": {
     "type": "git",
